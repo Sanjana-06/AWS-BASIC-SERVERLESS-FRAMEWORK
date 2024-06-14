@@ -6,7 +6,7 @@ provider:
   stage: dev
   region: us-west-1
   deploymentBucket:
-    name: aws-basic-serverless-framework-dev
+    name: aws-basic-serverless-framework-developer
 
 
 
