@@ -2,9 +2,11 @@ service: aws-basic-serverless-framework
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs20.x
   stage: dev
   region: us-west-1
+  deploymentBucket:
+    name: aws-basic-serverless-framework-dev
 
 
 
