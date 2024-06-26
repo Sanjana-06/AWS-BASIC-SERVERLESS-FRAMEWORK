@@ -19,6 +19,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+      CC: IN282856
+      FinID: IN2803
+      BU: SE Digital
+      HFM: FR0131
+      Contact: alm.support@se.com
+      AppOwner: Nagaraja Chary
+      Email: nagaraja.chary@se.com
+      AppPjCode: ALM
+      SEALZ-BusinessUnit: abc
+      SEALZ-Env: ${{ inputs.stage }}
+      SEALZ-CostCenter: IN282856
+      
       - name: Setup Stack Tags
         working-directory: ${{ github.workspace }}
         run: |
