@@ -41,9 +41,9 @@ jobs:
           echo "AppOwner: $AppOwner" >> stackTags.yml
           echo "Email: $Email" >> stackTags.yml
           echo "AppPjCode: $AppPjCode" >> stackTags.yml
-          echo "SEALZ-Env: $SEALZEnv" >> stackTags.yml
-          echo "SEALZ-CostCenter: $SEALZCostCenter" >> stackTags.yml
-          echo "SEALZ-BusinessUnit: $SEALZBusinessUnit" >> stackTags.yml
+          echo "SEALZ-Env: $SEALZ-Env" >> stackTags.yml
+          echo "SEALZ-CostCenter: $SEALZ-CostCenter" >> stackTags.yml
+          echo "SEALZ-BusinessUnit: $SEALZ-BusinessUnit" >> stackTags.yml
           mkdir -p ${{ github.workspace }}/serverless/providers/ && mv stackTags.yml ${{ github.workspace }}/serverless/providers/
           cat ${{ github.workspace }}/serverless/providers/stackTags.yml
       - name: serverless deploy
