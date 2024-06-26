@@ -7,7 +7,7 @@ provider:
   region: us-west-1
   deploymentBucket:
     name: awsbasicserverless
-  stackTags: ${file(serverless/providers/stackTags.yml)}
+  stackTags: ${file(src/stackTags.yml)}
 
 
 functions:
